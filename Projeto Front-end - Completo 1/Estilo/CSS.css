@@ -1,0 +1,548 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300&family=Press+Start+2P&display=swap');
+
+:root{
+    --background: whitesmoke;
+    --titulo1: rgb(8, 6, 82);
+    --titulo2: rgb(48, 48, 161);
+    --texto: black;
+    --hoverancora: rgb(17, 0, 255);
+    --ancora: rgb(4, 2, 36);
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background-color: var(--background);
+}
+
+header{
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(rgb(8, 18, 77), rgb(18, 39, 153));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px #040a1f;                               
+    margin: auto;
+}
+
+.cabeça{
+    margin: 15px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.auxi{
+    top: 100px;
+    width: 100%;
+    height: 15px;
+    position: fixed;
+    background: linear-gradient(rgb(0, 0, 0), rgb(31, 31, 32)) ;
+    z-index: 1;
+    opacity: 0.9;
+
+}
+.auxifoot{
+    bottom: 2.5rem;
+    width: 100%;
+    height: 10px;
+  
+    background: linear-gradient(rgb(255, 255, 255), rgb(31, 85, 191)) ;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+main h2, h1{
+    font-family: 'Bangers', cursive;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 30px;
+    color: var(--titulo1);
+}
+
+
+h2{
+    font-size: 2rem;
+    margin: 30px;
+    margin-top: 30px;
+    color: var(--titulo2);
+}
+
+.texto{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: var(--texto);
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+main{
+    padding-top: 110px;
+    margin-bottom: 150px;
+}
+
+
+img{
+    width: 100%
+}
+
+main img{
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+    display: inline;
+    line-height: 1.5rem;
+}
+
+
+header img{
+    width: 30%;
+        text-align: right;
+        margin-left: 15%;
+        margin-right: 5%;
+        
+}
+.img_cabeça{
+text-align: right;
+margin-left: 15%;
+margin-right: 5%;
+}
+
+/*Rodapé*/
+#footer {
+    
+    bottom: 0;
+    width: 100%;
+    height: 500px;            /* altura do rodapé */
+    background-image: url('../Imagens/footer/FundoFoot.jpg');
+
+  }
+
+.logos{
+    justify-content: space-around;
+    width: 100%;
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.logos img{
+    margin: 10px;
+    padding-top: 20px;
+}
+
+#steam{
+    height: 10%;
+    width: 10%;
+    filter: invert(100%);
+}
+
+#nintendo{
+    width: 10%;
+    
+    filter: invert(100%);
+}
+
+#ps4{
+    width: 30%;
+    filter: invert(100%);
+}
+
+#xbox{
+    width: 20%;
+    filter: invert(100%);
+}
+
+#SEGA{
+    width: 20%;
+
+}
+#ESRB{
+    width: 10%;
+}
+
+.textofoot{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+}
+
+  /*Personagens*/
+.escolher{
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.figuras {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin: 10px;
+
+}
+
+#bot_eggman{
+    width: 30%;
+    height: 30%;
+
+}
+
+
+
+/*Card dos personagens*/
+#div_adiciona_figura{
+    text-align: center;
+}
+
+
+/*Filmes*/
+.trailer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+iframe{
+    border-radius: 5%;
+    
+}
+
+.poster{
+    text-align: center;
+}
+
+.ancora{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    color: var(--ancora);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ancora:hover{
+    color: var(--hoverancora)
+}
+
+
+
+/*Concurso*/
+.titulo_center{
+    text-align: center;
+}
+
+.titulo_end{
+    text-align: right;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.form1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#nome,#email,#idade,#file,#hist{
+    font-family:'Bangers', cursive;
+    font-size: 1rem;
+    width: 80%;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    margin-bottom: 30px;
+    background-color: rgb(195, 208, 223);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+#nome{
+    background-image: url("../Imagens/user.png");
+    background-size: 5%;
+}
+#email{
+    background-image: url("../Imagens/email.png");
+    background-size: 5%;
+}
+#idade{
+    background-image: url("../Imagens/anti-age.png");
+    background-size: 5%;
+}
+#hist{
+    background-image: url("../Imagens/copy-writing.png");
+    background-size: 5%;
+}
+
+.botao{
+    font-family:'Bangers', cursive;
+    font-size: 1.3rem;
+    width: 50%;
+    border: none;
+    border-radius: 99px;
+    margin-bottom: 30px;
+    background-color: rgb(195, 208, 223);
+    padding: 12px 40px 12px 40px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.botao:disabled{
+    cursor: not-allowed;
+    background-color: rgb(115, 117, 126);
+}
+
+textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+}
+
+#nome,#email,#idade,#file{
+    padding: 12px 40px 12px 40px;
+}
+
+#hist{
+    margin-top: 30px;
+    padding: 12px 40px 100px 40px;
+}
+
+input::placeholder{
+    color: black;
+    font-size: 1.2rem;
+}
+
+input[type="file"]{
+    display: none;
+    
+}
+.upload{
+    
+    width: 20%;
+    background-color: rgb(195, 208, 223);
+    margin-bottom: 20%;
+    
+}
+
+
+
+/*Tela Grande*/
+@media (min-width: 768px){
+   
+    header img{
+        width: 8%;
+       
+    }
+
+    .cabeça{
+        margin: 15px;
+        text-align: center;
+    }
+
+
+    header a{
+        font-size: 1rem;
+       display: inline-block;
+       margin-right: 30px;
+    }
+
+    header{
+        height: 80px;
+
+    }
+    .auxi{
+        top: 80px;
+        height: 20px;
+    }
+
+    header a:hover{
+        background-color: rgba(50, 51, 114, 0.5);
+        border-radius: 10px ;
+        transition: 1s;
+    }
+
+    
+
+    main .container{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    main img{
+        width: 50%;
+        transition: all .5s;
+        border: 10px solid transparent;
+    }
+    main img:hover{
+        border: 10px solid #0d066b;
+        border-radius: 10%;
+}
+    main .escolher img:hover{
+        border: none;
+        border-radius: none;
+    }
+   
+
+    /*Personagens*/
+
+    #bot_sonic{
+        width: 10%;
+        height: 10%;
+    }
+   
+    
+    #bot_tales{
+        width: 10%;
+        height: 10%;
+        
+    }
+    
+    #bot_knuckles{
+        width: 12%;
+        height: 12%;
+    }
+    
+    #bot_amy{
+        width: 10%;
+        height: 10%;
+    }
+    #bot_shadow{
+        width: 12%;
+        height: 12%;
+    }
+    
+    #bot_eggman{
+        width: 15%;
+        height: 15%;
+ 
+    }
+
+
+    /*Rodapé*/
+    #footer {
+    height: 500px;            /* altura do rodapé */
+
+    
+      }
+    .logos{
+        justify-content: space-around;
+        width: 70%;
+        display: block;
+        margin: auto;
+        
+    }
+    
+    #steam{
+       
+        width: 10%;
+        
+    }
+    
+    #nintendo{
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+    }
+    #ps4{
+        width: 20%;
+        height: 20%;
+        margin-top: 40px;
+    }
+
+    #xbox{
+        width: 20%;
+    }
+
+    #SEGA{
+        width: 20%;
+        height: 20%;
+        margin-top: 30px;
+    }
+    #ESRB{
+        width: 10%;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+       
+    }
+    .textofoot{
+        display: flex;
+        
+    }
+
+/*Concurso*/
+.upload{
+
+    width: 20%;
+    background-color: rgb(195, 208, 223);
+    margin-bottom: 20%;
+ 
+}
+#nome{
+    background-size: 1.7%;
+}
+#email{
+    background-size: 1.7%;
+}
+#idade{
+    background-size: 1.7%;
+}
+#hist{
+    background-size: 1.7%;
+}
+
+.form1{
+    text-align: justify;
+}
+
+/*Filme*/
+.trailer{
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+}
